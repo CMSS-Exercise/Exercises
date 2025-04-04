@@ -1,0 +1,12 @@
+# check out if an instance of mesa is already running
+sudo lsof -t -i:8521
+
+# kill it in case
+sudo kill -9 $(sudo lsof -t -i:8521)
+
+# run the provided schelling model from the mesa-examples repo
+mesa runserver schelling
+
+
+
+
