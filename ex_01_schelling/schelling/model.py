@@ -66,7 +66,7 @@ class Schelling(mesa.Model):
         self.density = density
         self.minority_pc = minority_pc
         self.homophily = homophily
-        self.radius = radius
+        self.radius = int(radius)
 
         self.schedule = mesa.time.RandomActivation(self)
         self.grid = mesa.space.SingleGrid(width, height, torus=True)
